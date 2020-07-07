@@ -61,3 +61,75 @@ console.log(arrayWithPeople);
 
 let arrayWithCars = ["Volvo", "Kia", "Toyota", "Honda", "Mazda"]
 console.log(arrayWithCars)
+
+
+
+// 3. -- створити об'єкт (не меньше 5ти властивостей) який описує, одна з властивостей обов'язково повинна бути об'єктом,ще одна - масивом
+// - будинок
+// - водій
+// - іграшку
+// - стіл
+// - сумка
+
+
+
+let build = {
+    room: {
+        firstRoom: "Restroom",
+        secondRoom: "Bedroom",
+        thirdRoom: "Hallway",
+        fourthRoom: "Living Room"
+    },
+    floors: 1,
+    square: 42,
+    windows: ["firstWindow", "secondWindow"],
+    color: "White"
+}
+
+let driver = {
+    names: {
+        oneDriver: "Oleg",
+        secondDriver: "Voktor",
+        thirdDriver: "Alibek"
+    },
+    age: [32, 18, 27],
+    height: 182,
+    weight: 90,
+    cars: ["Toyota", "Volkswagen"],
+}
+
+let toy = {
+    brand: "Funny Toy",
+    dataCreation: 2019,
+    model: {
+        car: "BMW",
+        animal: "Rebbit",
+        constructor: "Builder"
+    },
+    fromWho: ["boys", "girls"],
+    owner: "Serhiy Alibaba"
+}
+
+let table = {
+    tableShape: ["circle", "square"],
+    amount: 10,
+    amountLegs: 4,
+    dataCreation: 2020,
+    material: {
+        oakAmount: 4,
+        mapleAmount: 6,
+        cherryTreeAmount: 10
+    }
+}
+
+let bag = {
+    name: "clutch",
+    gender: "Women",
+    color: ["Brown", "Black", "Red"],
+    material: {
+        brown: "leather",
+        black: "Faux Lether",
+        red: "Rag",
+        amount: 200
+    }
+}
