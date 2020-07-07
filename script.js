@@ -31,9 +31,9 @@ let flat = {
 }
 
 let book = {
-    name: "Crime and Punishment",
-    author: "Dostoevsiy",
-    color: "green",
+    name: "Kobzar",
+    author: "Shevchenko",
+    color: "Brown",
     pages: 480,
-    publicationData: 1866
+    publicationData: 1840
 }
