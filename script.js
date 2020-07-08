@@ -226,3 +226,67 @@ console.log("Возраст и Имя - " + users[4].age + " " + users[4].name)
 // вік + сатус Анни
 
 console.log("Возраст и статус Анны - " + users[5].age + " " + users[5].status)
+
+
+
+// -- Напишіть код,  який за допомоги document.getElementById або document.getElementsByClassName або document.getElementsByTagName :
+// - отримує текст з параграфа з id "content"
+
+
+let idContent = document.getElementById("content");
+console.log(idContent);
+
+
+// отримує текст з блоку з id "rules"
+
+
+let idRules = document.getElementById("rules")
+console.log(idRules)
+
+// - замініть текст параграфа з id 'content' на будь-який інший
+
+let textIdContent = document.getElementById("content");
+
+textIdContent.innerText = `lorem20`;
+console.log(textIdContent);
+
+// - замініть текст параграфа з id 'rules' на будь-який інший
+
+let textIdRules = document.getElementById("rules");
+textIdRules.innerText = "other rules"
+console.log(textIdRules);
+
+// - змініть кожному елементу колір фону на червоний
+
+let tagBackColorRed = document.body.getElementsByTagName("*")
+console.log(tagBackColorRed)
+for (let i = 0; i < tagBackColorRed.length; i++) {
+    tagBackColorRed[i].style.backgroundColor = "red";
+}
+
+
+// - змініть кожному елементу колір тексту на синій
+
+let tagBackColorBlue = document.body.getElementsByTagName("*")
+console.log(tagBackColorBlue)
+for (let i = 0; i < tagBackColorBlue.length; i++) {
+    tagBackColorBlue[i].style.backgroundColor = "blue";
+}
+
+
+// - отримати весь список класів елемента з id=rules і вивести їх в console.log
+
+let listClassElements = document.getElementsByClassName("fc bp");
+console.log(listClassElements)
+
+// - отримати всі елементи з класом fc_rules
+
+let allElementsClassFc = document.getElementsByClassName("fc_rules");
+console.log(allElementsClassFc)
+
+// - поміняти колір тексту у всіх елементів fc_rules на червоний
+
+let allElemChColorRed = document.getElementsByClassName("fc_rules");
+for (let i = 0; i < allElemChColorRed.length; i++) {
+    allElemChColorRed[i].style.backgroundColor = "red"
+}
