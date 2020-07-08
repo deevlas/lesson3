@@ -133,3 +133,96 @@ let bag = {
         amount: 200
     }
 }
+
+
+// - звернутися в відповідну ячейку масиву і відповідний параметр об'єкта і вивести в консольх наступне
+
+
+let users = [{
+        name: 'vasya',
+        age: 31,
+        status: false
+    },
+    {
+        name: 'petya',
+        age: 30,
+        status: true
+    },
+    {
+        name: 'kolya',
+        age: 29,
+        status: true
+    },
+    {
+        name: 'olya',
+        age: 28,
+        status: false
+    },
+    {
+        name: 'max',
+        age: 30,
+        status: true
+    },
+    {
+        name: 'anya',
+        age: 31,
+        status: false
+    },
+    {
+        name: 'oleg',
+        age: 28,
+        status: false
+    },
+    {
+        name: 'andrey',
+        age: 29,
+        status: true
+    },
+    {
+        name: 'masha',
+        age: 30,
+        status: true
+    },
+    {
+        name: 'olya',
+        age: 31,
+        status: false
+    },
+    {
+        name: 'max',
+        age: 31,
+        status: true
+    }
+];
+
+// - статус Андрія
+
+console.log(users[7].status)
+
+// - статус Максима
+
+console.log(users[4].status, users[10].status)
+
+// - ім'я передостаннього об'єкту
+
+console.log(users[users.length - 2].name)
+
+// - ім'я третього об'єкта
+
+console.log(users[2].name)
+
+// - вік Олега
+
+console.log(users[6].age)
+
+// - вік Олі
+
+console.log("Возраст Оли - " + users[users.length - 2].age)
+
+// вік + ім'я 5го об'єкта
+
+console.log("Возраст и Имя - " + users[4].age + " " + users[4].name)
+
+// вік + сатус Анни
+
+console.log("Возраст и статус Анны - " + users[5].age + " " + users[5].status)
